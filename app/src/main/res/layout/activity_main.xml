@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/btnGalary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_baseline_image_24"
+            android:text="Rotate"/>
+        <ImageView
+            android:id="@+id/btnRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_baseline_screen_rotation_alt_24"
+            android:text="Rotate"/>
+        <ImageView
+            android:id="@+id/btnGrayscale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_baseline_gradient_24"
+            android:text="Grayscale"/>
+
+        <ImageView
+            android:id="@+id/selectImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_baseline_photo_camera_24"
+            android:onClick="selectImage"/>
+
+
+        <ImageView
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_baseline_lock_reset_24"
+            android:layout_height="wrap_content"
+            android:text="Reset"/>
+        <ImageView
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/ic_baseline_file_download_done_24"
+            android:text="Rotate"/>
+    </LinearLayout>
+
+</LinearLayout>
